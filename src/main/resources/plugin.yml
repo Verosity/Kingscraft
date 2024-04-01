@@ -1,0 +1,4 @@
+name: Kingscraft
+version: '${project.version}'
+main: org.evmasterandverosity.kingscraft.Kingscraft
+api-version: '1.20'
