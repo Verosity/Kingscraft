@@ -1,0 +1,33 @@
+1. Command with Args
+2. Error if player did not provide arguments
+
+-=-=CREATE=-=-
+1. Create new team that is the name of the Kingdom
+2. Store Kingdom name, owner, color, coords of flags, players, and password in a JSON file
+3. Add owner to team
+4. Give owner the random Generated password
+5. Create Flag at the block the player is standing on
+
+-=-=JOIN=-=-
+1. Store kingdom name and password Args
+2. Find kingdom name in JSON
+3. Check if name and password match
+4. Check if sender is in kingdom
+5. If not 4, add sender to kingdom
+
+-=-=JOIN=-=-
+1. Let players change their color
+2. Let players view their team
+3. Let players delete their kingdom
+4. Let players see their password
+5. Let players move their flag
+
+-=-=RAID=-=-
+1. Store the kingdom name arg
+2. Check if kingdom has been raided
+3. If not 2, start raid on kingdom
+4. Alert all players about the raid
+
+-=-=ADMIN=-=-
+1. Let admins to reset raids
+2. Let admins to go into vanish
