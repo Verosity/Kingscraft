@@ -12,6 +12,8 @@ class Kingscraft : JavaPlugin() {
     override fun onDisable() {
         // Plugin shutdown logic
         logger.info("Kingscraft Plugin Disabled")
+
+        logger.info("I'm coding this ona chromebook")
     }
 
 }
