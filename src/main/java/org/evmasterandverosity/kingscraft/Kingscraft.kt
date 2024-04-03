@@ -13,4 +13,5 @@ class Kingscraft : JavaPlugin() {
         // Plugin shutdown logic
         logger.info("Kingscraft Plugin Disabled")
     }
+
 }
