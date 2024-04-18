@@ -2,3 +2,10 @@ name: Kingscraft
 version: '1.0-SNAPSHOT'
 main: org.evmasterandverosity.kingscraft.Kingscraft
 api-version: '1.20'
+commands:
+  kingdom:
+    description: Early Kingdom Test
+    usage: /<commabnd>
+    aliases:
+      - k
+      - king

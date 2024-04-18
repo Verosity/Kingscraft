@@ -1,29 +1,32 @@
 package org.evmasterandverosity.kingscraft
 
-import org.bukkit.ChatColor
+import org.apache.logging.log4j.message.Message
 import org.bukkit.plugin.java.JavaPlugin
-import org.evmasterandverosity.utils.KingdomUtils
 import java.io.File
 import java.io.IOException
+import org.evmasterandverosity.commands.KingdomCommand
+import org.evmasterandverosity.commands.tabcompletion.KingdomTabCompletion
 
 
 class Kingscraft : JavaPlugin() {
 
     companion object {
+
         const val dataPath: String = "plugins/Kingscraft/kingdoms.json"
     }
 
     override fun onEnable() {
         // Plugin startup logic
-        logger.info("Kingscraft Plugin Starting")
+        logger.info("Kingscraft Plugin Start...")
         logger.info("Kingscraft Plugin Enabled")
+
+        getCommand("kingdom")?.setExecutor(KingdomCommand())
+        getCommand("kingdom")?.setTabCompleter(KingdomTabCompletion())
     }
 
     override fun onDisable() {
         // Plugin shutdown logic
         logger.info("Kingscraft Plugin Disabled")
-
-        logger.info("I'm coding this ona chromebook")
     }
 
     @Throws(IOException::class)
